@@ -1,0 +1,73 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.body{
+    background: url("../snk.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#board{
+    background: linear-gradient(rgb(170,236,170),rgb(236,236,167));
+    width: 93vmin;
+    height: 96vmin;
+    margin:10px;
+    border:5px 12px black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+
+.food{
+    background: linear-gradient(rgb(238, 16, 53),rgb(246, 250, 8));
+    
+    border: 2px solid rgb(255, 7, 40);
+    border-radius: 12px;
+   
+}
+.head{
+    background: linear-gradient(rgb(81, 253, 1),rgb(243, 188, 7));
+    transform:scale(1.02);
+    size: 10px;
+    border: 2px solid rgb(93, 18, 143);
+    border-radius: 9px;
+    
+}
+.snake{
+
+    background: linear-gradient(rgb(3, 192, 176),rgb(6, 161, 71));
+   
+    border: 2px solid orangered;
+    border-radius: 12px;
+}
+
+
+
+#highscorebox{
+    position:absolute;
+    top:59px;
+    right:140px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: revert;
+}
+
+
+
+#scorebox{
+    position: absolute;
+    left:159px;
+    top:50px;
+    font-size:30px;
+    font-weight:bolder
+}
+
+
